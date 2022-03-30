@@ -3,7 +3,7 @@
 #include<iostream>
 #include<algorithm>
 using namespace std;
-
+int swap_count = 0;
    void bubbleSort(int array[], int n){
      int flag=0;
      for(int i=0; i<n; i++){
@@ -11,6 +11,7 @@ using namespace std;
          if(array[j]>array[j+1]){
            flag = 1;
            swap(array[j],array[j+1]);
+           swap_count++;
          }
        }
        if(flag==0)
@@ -23,5 +24,7 @@ int main(){
   // sorted array in accending order
   for(int i=0; i<8; i++){
     cout << array[i] << " ";
+    cout << "\nArray sorted in " << swap_count << " swap";
+    return 0;
   }
 }
