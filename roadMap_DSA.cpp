@@ -14,7 +14,7 @@ int main(){
    // setting console color cyan
    SetConsoleTextAttribute(a, 3 | FOREGROUND_INTENSITY);
    for (int i = 0; i<16; i++){
-      cout << i+1 <<" " << data[i] <<"\n";
+      cout <<"\t\t  " << i+1 <<" " << data[i] <<"\n";
    }
    // setting console color red
    SetConsoleTextAttribute(a, 4 | FOREGROUND_INTENSITY);
